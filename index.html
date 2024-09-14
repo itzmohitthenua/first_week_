@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint page</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Complaint Management  System</h2>
+        <form id="complaintForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name..">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email..">
+
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="service">Service</option>
+                <option value="product">Product</option>
+                <option value="product">Health</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" placeholder="Describe your complaint.." style="height:200px"></textarea>
+
+            <label for="fileUpload">Upload supporting file:</label>
+            <input type="file" id="fileUpload" name="fileUpload">
+
+            <input type="submit" value="Submit">
+        </form>
+        <div id="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
